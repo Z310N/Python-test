@@ -1,0 +1,19 @@
+    When managing exceptions in a try-except block in Python, "else" is utilized. If there isn't an exception triggered in the try block, the code in the "else" block is run.
+A technique to provide a piece of code that will only run if the try block does not raise an exception is to use the "else" block.
+However, "finally" is used to describe a block of code within a try-except block that will always be performed, regardless of whether an exception is triggered or not. 
+Typically, resources collected in the try block are cleaned up in the "finally" block by shutting files or releasing locks.
+
+Here is a straightforward illustration of the distinction between "else" and "finally":
+
+try:
+    # some code that may raise an exception
+    x = int(input("Enter a number: "))
+except ValueError:
+    # code to handle the exception
+    print("Invalid input.")
+else:
+    # code that will only be executed if no exception is raised
+    print("Valid input.")
+finally:
+    # code that will always be executed
+    print("Goodbye.")
