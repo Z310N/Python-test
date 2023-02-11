@@ -1,3 +1,3 @@
 # Python-test
 
-Run Program in menu.py
+Run Program in Menu.py
