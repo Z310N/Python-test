@@ -9,12 +9,14 @@ elif (year % 4 ==0) and (year % 100 != 0):
 else:
     print("{0} -> false".format(year))
 
-print("")
-print("MENU".center(80, "—"))
-print("0. Exit")
-print("1. Menu")
-
 while True:
+    print("")
+    print("MENU".center(80, "—"))
+    print("0. Exit")
+    print("1. Menu")
+
+
+
     choice = int(input("Enter your choice: "))
     print("")
     if choice == 1:
